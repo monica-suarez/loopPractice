@@ -10,12 +10,20 @@ const thousand = () => {
 
 thousand();
 
-let person = {firstName: "Jane",
+let person = {
+    firstName: "Jane",
     lastName: "Doe",
     birthDate: "Jan 5, 1925",
     gender: "female"
-};
-
+  }
+  for (let key in person) {
+    if (key == "birthDate"){
+      let birthYear = person["birthDate"].match(/[0-2]\d\d\d/);
+      if (birthYear % 2 != 0){
+        console.log(person["birthDate"]);
+      }
+    }
+  }
 
 let arrayOfPersons = [
   {
