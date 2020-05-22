@@ -16,17 +16,6 @@ let person = {firstName: "Jane",
     gender: "female"
 };
 
-const person = {firstName: "Peter", lastName: "Wisser", age:25};
-const loopOverObject = (obj) => {
-  let text = "";
-  let x;
-
-  for (x in obj) {
-    text += obj[x] + " ";
-  }
-  return text
-}
-loopOverObject(person)
 
 let arrayOfPersons = [
   {
