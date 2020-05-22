@@ -53,3 +53,10 @@ let arrayOfPersons = [
 ]
 const newArray = arrayOfPersons.map(elem => elem.firstName)
 console.log(newArray)
+const onlyDudes = arrayOfPersons.filter(elem => elem.gender == "male");
+console.log(onlyDudes);
+const beforeNineties = arrayOfPersons.filter(
+	(birthYear) => birthYear["birthDate"].match(/\d{4}/) < "1990"
+);
+
+console.log(beforeNineties);
