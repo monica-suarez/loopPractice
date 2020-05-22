@@ -18,7 +18,7 @@ let person = {
   }
   for (let key in person) {
     if (key == "birthDate"){
-      let birthYear = person["birthDate"].match(/[0-2]\d\d\d/);
+      let birthYear = person["birthDate"].match(/\d{4}/);
       if (birthYear % 2 != 0){
         console.log(person["birthDate"]);
       }
